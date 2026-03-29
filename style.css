@@ -396,7 +396,7 @@ span {
     cursor: pointer;
 }
 .send-btn:hover{
-    transform: scaled(1.03);
+    transform: scale(1.03);
     background-color: #b74b4b;
     color: black;
 }
@@ -452,25 +452,106 @@ span {
         content: "DEVELOPER";
     }
 }
+@media (max-width: 995px) {
 
-@media (max-width: 1000px) {
-    .home {
-        gap: 4rem;
+    html {
+        font-size: 58%;
     }
-}
 
-@media(max-width:995px) {
+    header {
+        padding: 1rem 5%;
+    }
+
     .home {
         flex-direction: column;
-        margin: 5rem 4rem;
+        text-align: center;
+        gap: 4rem;
     }
 
-    .home .home-content h3 {
-        font-size: 2.5rem;
+    .home-img img {
+        width: 300px;
+    }
+
+    .home-content {
+        align-items: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 3.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .home-img img {
+        width: 250px;
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    .btn {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .skills-list {
+        gap: 0.8rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+
+    html {
+        font-size: 52%;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 200px;
+    }
+
+    nav {
+        width: 75%;
+    }
+
+    .section {
+        padding: 6rem 5% 3rem;
     }
 }
 footer {
